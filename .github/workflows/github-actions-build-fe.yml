@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Report Deploy
         uses: OpsLevel/report-deploy-github-action@v0.7.0
