@@ -1,0 +1,27 @@
+openapi: "3.1.0"
+info:
+  title: "juno  API"
+  description: "junobe API"
+  version: "1.0.0"
+servers:
+  - url: "https://junobe"
+paths:
+  /api/v1/juno:
+    get:
+      summary: "GET api/v1/juno"
+      operationId: "getHelloJuno"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/JunoDto"
+components:
+  schemas:
+    JunoDto:
+      type: "object"
+      properties:
+        message:
+          type: "string"
+  
