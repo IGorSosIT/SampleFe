@@ -9,7 +9,7 @@ jobs:
         uses: OpsLevel/report-deploy-github-action@v0.7.0
         with:
           integration_url: ${{ secrets.OL_INTEGRATION_URL }}
-          service: "my-service"
+          service: "Sample Frontend"
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
